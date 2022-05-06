@@ -1,5 +1,5 @@
 rm(list = ls())
-setwd("Z:/R")
+
 hpc <- read.table("household_power_consumption.txt", header = T, sep=";", comment.char="%", stringsAsFactors=FALSE, na.strings="?") 
 #head(hpc)
 Feb012007_hpc<-subset(hpc, hpc$Date=="1/2/2007"|hpc$Date=="2/2/2007")
